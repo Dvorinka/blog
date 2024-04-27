@@ -4748,3 +4748,22 @@ small{
         box-shadow: -10px 10px #20b1ff;
     }
 }
+
+.rating ion-icon:nth-child(even){
+    color: #20b1ff;
+}
+
+.rating ion-icon:nth-child(odd){
+    color: #f8cb00;
+}
+
+.right{
+    text-align: right;
+}
+
+.rating-num{
+    font-size: 3.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 32px;
+}
