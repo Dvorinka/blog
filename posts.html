@@ -29,6 +29,7 @@
 
       <div class="filters">
           <button onclick="filterPosts('games', this)">Games</button>
+          <button onclick="filterPosts('reviews', this)">Reviews</button>
           <button onclick="filterPosts('tech', this)">Tech</button>
           <button onclick="filterPosts('movies', this)">Movies</button>
           <button onclick="filterPosts('apps', this)">Apps</button>
@@ -41,6 +42,22 @@
   <section class="flex flex-col justify-center items-center px-6 font-mono">
     <h2 class="mb-2 text-2xl font-bold" style="margin-bottom: 20px;"><span class="opacity-50">~</span> Posts <span class="opacity-50">~</span></h2>
     <ul class="mt-4 space-y-8 max-w-lg" id="articleList">
+
+      <li class="post" data-tags="games reviews">
+        <div>
+          .* <a class="font-bold underline text-md md:text-lg hover:text-blue-900 dark:hover:text-blue-300" href="blogs/">A Plague Tale: Requiem</a>
+        </div>
+        <div class="px-0.5 my-0.5">
+          <span class="text-xs text-gray-600 no-underline">[4/27/2024]</span>
+          <a class="py-2 text-xs text-gray-500 no-underline hover:text-blue-900 dark:hover:text-blue-300" href="Reference/Games.html">#Games</a>
+          <a class="py-2 text-xs text-gray-500 no-underline hover:text-blue-900 dark:hover:text-blue-300" href="Reference/Reviews.html">#Reviews</a>
+          <span class="text-xs text-gray-600 no-underline">~2 min read</span>
+        </div>
+        <div class="px-0.5 my-1 text-xs text-justify md:text-sm dark:text-gray-400">
+          <p class="postdes">Video Game Review</p>
+        </div>
+        <img class="blogpreview" src="images/">
+      </li>
 
       <li class="post" data-tags="free tutorials">
         <div>

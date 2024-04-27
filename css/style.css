@@ -1368,8 +1368,8 @@ img,video{
     margin-bottom:3rem
 }
 .my-4{
-    margin-top:1rem;
-    margin-bottom:1rem
+    margin-top:.5rem;
+    margin-bottom:2.5rem
 }
 .my-6{
     margin-top:1.5rem;
@@ -1498,7 +1498,7 @@ img,video{
     height:1.25rem
 }
 .h-60{
-    height:15rem
+    height:22rem;
 }
 .h-full{
     height:100%
@@ -4465,7 +4465,18 @@ img,video{
 }
 @media (min-width:768px){
     .md\:h-72{
-        height:18rem
+        height:30rem
+    }
+    .md\:h-cu{
+        width: 85.1%;
+        height: 86%;
+        display: block;
+        margin: 0px auto 0px auto;
+    }
+    .md\:h-vid{
+        width: 85%;
+        display: block;
+        margin: 0px auto 0px auto;
     }
     .md\:text-5xl{
         font-size:3rem;
@@ -4660,4 +4671,80 @@ small{
     color: #000000;
     background-color: white;
     font-weight: bolder;
+}
+
+.blogimg {
+    border: 3px solid #ffffff;
+    border-radius: 200px 40px 200px 40px;
+    box-shadow: 20px 20px #a200ff;
+    transition: .7s ease-in-out;
+}
+
+.blogimg:hover {
+    border-radius: 40px 200px 40px 200px;
+    box-shadow: -20px 20px #20b1ff;
+}
+
+.blogimgin{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 20px 20px #f8cb00;
+}
+
+.blogimgin2{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: -20px 20px #f8cb00;
+}
+
+.blogimgin3{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: -20px -20px #f8cb00;
+}
+
+.blogimgin4{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 20px -20px #f8cb00;
+}
+
+.blogimgin5{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 20px 20px #20b1ff, -20px -20px #f8cb00;
+}
+
+.blogvid{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: -20px 20px #ff0000;
+}
+
+
+@media (max-width:908px) {
+    .blogimg {
+        box-shadow: 10px 10px #a200ff;
+    }
+    .blogimg:hover {
+        box-shadow: -10px 10px #20b1ff;
+    }
+}
+
+@media (max-width:767px) {
+    .blogimg {
+        box-shadow: 20px 20px #a200ff;
+    }
+    .blogimg:hover {
+        box-shadow: -20px 20px #20b1ff;
+    }
+}
+
+@media (max-width:622px) {
+    .blogimg {
+        box-shadow: 10px 10px #a200ff;
+    }
+    .blogimg:hover {
+        box-shadow: -10px 10px #20b1ff;
+    }
 }
