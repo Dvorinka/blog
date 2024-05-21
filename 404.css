@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "Buenos Aires Regular";
+    src: url("fonts/Buenos-Aires-Web-Regular.woff");
+}
+
+@font-face {
+    font-family: "Buenos Aires Light";
+    src: url("fonts/Buenos-Aires-Web-Light.woff");
+}
+
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+    display: block;
+    cursor: url(https://cdn.custom-cursor.com/db/18434/32/detailed-color-bee-cursor.png), default !important;
+}
+
+body{
+    background-color: #fff;
+}
+
+
+.first{
+    width: 70%;
+    margin: 70px auto 0px auto;
+}
+
+h1{
+    font-family: "Buenos Aires Regular", sans-serif;
+    color: #090909;
+    font-size: 44px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0px;
+}
+
+.second{
+    display: grid;
+    place-content: center center;
+}
+
+.img{
+    background-image: url(404.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    height: 600px;
+}
+
+.last{
+    width: 70%;
+    margin: 0px auto 10px auto;
+}
+
+p{
+    font-family: "Buenos Aires Light", sans-serif;
+    color: #090909;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px;
+}
+
+a{
+    cursor: url(https://cdn.custom-cursor.com/db/18433/32/detailed-color-bee-pointer.png), pointer !important;
+}
+
+.butn{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.button{
+    text-decoration: none;
+    color: white;
+    background-color: #090909;
+    padding: 15px;
+    box-shadow: 5px 5px #ffc400;
+    transition: .3s ease-in-out;
+}
+
+.button:hover{
+    box-shadow: 10px 10px #ffc400;
+}
+
+.foot{
+    color: #090909;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.foot:hover{
+    text-decoration: underline;
+}
+
+.footer{
+    width: 70%;
+    margin: 0px auto 0px auto;
+}
+
+
+@media screen and (max-width: 532px) {
+    .img{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+::selection{
+    color: #ffffff;
+    background-color: #090909;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
