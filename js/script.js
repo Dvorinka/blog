@@ -33,3 +33,46 @@ function filterPosts(tag, button) {
         button.classList.add('active');
     }
 }
+
+document.getElementById("copyLink").addEventListener("click", function() {
+    var textToCopy = this.getAttribute("text");
+    copyToClipboard(textToCopy);
+    showCopiedMessage();
+});
+
+function copyToClipboard(text) {
+    var input = document.createElement('textarea');
+    input.innerHTML = text;
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand('copy');
+    document.body.removeChild(input);
+}
+
+function showCopiedMessage() {
+    var codeSpan = document.getElementById("codeSnippet");
+    var originalText = codeSpan.innerHTML;
+    var spanWrapper = document.createElement("span");
+    spanWrapper.style.fontSize = "14px";
+    spanWrapper.style.display = "block";
+    spanWrapper.style.margin = "0 auto";
+    spanWrapper.style.textAlign = "center";
+    spanWrapper.style.boxSizing = "border-box";
+    spanWrapper.innerText = "The Code Was Copied";
+    spanWrapper.style.opacity = "0";
+    
+    codeSpan.innerHTML = "";
+    codeSpan.appendChild(spanWrapper);
+
+    void spanWrapper.offsetWidth;
+    
+    spanWrapper.style.transition = "opacity 1s";
+    spanWrapper.style.opacity = "1";
+
+    setTimeout(function() {
+        spanWrapper.style.opacity = "0";
+        setTimeout(function() {
+            codeSpan.innerHTML = originalText;
+        }, 500);
+    }, 2000);
+}
